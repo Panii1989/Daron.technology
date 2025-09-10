@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARON TECHNOLOGY - Accesorios Móviles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logoprincipal.png" alt="Logo de la tienda" class="logo">
+        </div>
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="category-filter">Categorías:</label>
+                <select id="category-filter">
+                    <option value="all">Todas</option>
+                    <option value="fundas">Fundas</option>
+                    <option value="templados">Templados</option>
+                    <option value="cables">Cables</option>
+                    <option value="cargadores">Cargadores</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-filter">Ordenar por:</label>
+                <select id="sort-filter">
+                    <option value="default">Por defecto</option>
+                    <option value="price-asc">Precio (Menor a Mayor)</option>
+                    <option value="price-desc">Precio (Mayor a Menor)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main id="products-container"></main>
+        <div class="cart-container">
+            <h2>Tu Carrito</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button id="checkout-button">Hacer Pedido por WhatsApp</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
